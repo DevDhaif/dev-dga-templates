@@ -1,0 +1,74 @@
+@layer theme, base, ddga-base, ddga-components, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+@import '@dev-dga/css';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* only @dev-dga tokens exist as utilities; Tailwind's own scales are reset. */
+@theme inline {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-background: var(--ddga-color-background);
+  --color-ink: var(--ddga-text-primary);
+  --color-ink-2: var(--ddga-text-secondary);
+  --color-input: var(--ddga-color-input);
+  --color-card-foreground: var(--ddga-color-card-foreground);
+  --color-muted: var(--ddga-color-muted);
+  --color-brand: var(--ddga-color-primary);
+  --color-gray-50: var(--ddga-gray-50);
+  --color-gray-500: var(--ddga-gray-500);
+  --color-gray-800: var(--ddga-gray-800);
+  --color-sa-800: var(--ddga-sa-800);
+  --color-sa-950: var(--ddga-sa-950);
+
+  --text-*: initial;
+  --text-xs: var(--ddga-font-size-xs);
+  --text-xs--line-height: var(--ddga-font-line-height-xs);
+  --text-sm: var(--ddga-font-size-sm);
+  --text-sm--line-height: var(--ddga-font-line-height-sm);
+  --text-base: var(--ddga-font-size-base);
+  --text-base--line-height: var(--ddga-font-line-height-base);
+  --text-lg: var(--ddga-font-size-lg);
+  --text-lg--line-height: var(--ddga-font-line-height-lg);
+  --text-xl: var(--ddga-font-size-xl);
+  --text-xl--line-height: var(--ddga-font-line-height-xl);
+  --text-display-sm: var(--ddga-font-size-display-sm);
+  --text-display-sm--line-height: var(--ddga-font-line-height-display-sm);
+  --text-display-lg: var(--ddga-font-size-display-lg);
+  --text-display-lg--line-height: var(--ddga-font-line-height-display-lg);
+  --text-display-xl: var(--ddga-font-size-display-xl);
+  --text-display-xl--line-height: var(--ddga-font-line-height-display-xl);
+  --tracking-display: var(--ddga-font-tracking-display);
+
+  --font-weight-normal: var(--ddga-font-weight-regular);
+  --font-weight-medium: var(--ddga-font-weight-medium);
+  --font-weight-semibold: var(--ddga-font-weight-semibold);
+  --font-weight-bold: var(--ddga-font-weight-bold);
+
+  --radius-*: initial;
+  --radius-xs: var(--ddga-radius-xs);
+  --radius-sm: var(--ddga-radius-sm);
+
+  --container-paragraph: var(--ddga-layout-paragraph-max);
+}
+
+/* the page container: 1280px content, gutters 80 / 32 (<1024) / 16 (<768) as in the frames. */
+@utility hp-container {
+  inline-size: min(100% - 2 * 80px, var(--ddga-layout-container-max));
+  margin-inline: auto;
+
+  @media (width < 64rem) {
+    inline-size: min(
+      100% - 2 * var(--ddga-layout-container-padding),
+      var(--ddga-layout-container-max)
+    );
+  }
+
+  @media (width < 48rem) {
+    inline-size: min(
+      100% - 2 * var(--ddga-layout-container-padding-mobile),
+      var(--ddga-layout-container-max)
+    );
+  }
+}
