@@ -22,7 +22,7 @@ export function PlatformLogo({
   return (
     <span
       className={[
-        'inline-flex items-center gap-2 bg-background px-1 py-1.25 font-medium whitespace-nowrap text-gray-500 dark:text-ink-2',
+        'inline-flex items-center gap-2 bg-background px-1 py-1.25 font-medium whitespace-nowrap text-gray-500 dark:text-ink-secondary',
         LAYOUT[layout],
         SIZE_TEXT[size],
         className,

@@ -33,7 +33,7 @@ export function AboutSection() {
                     <CardIcon featured size="lg">
                       <Icon />
                     </CardIcon>
-                    <p className="text-display-lg font-normal tracking-display text-sa-800 rtl:tracking-normal dark:text-brand">
+                    <p className="text-display-lg font-normal tracking-display text-sa-800 rtl:tracking-normal dark:text-primary">
                       {stat.value}
                     </p>
                     <p className="text-base text-gray-800 dark:text-card-foreground">

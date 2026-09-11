@@ -5,6 +5,8 @@ The DGA Platforms Code page templates, built as React pages from
 English, RTL-native, light and dark. The first template is the **Home Page Template**; the Service
 Page and Form templates from the same Figma collection follow in this repo.
 
+**Live demo:** [dev-dga-templates.vercel.app](https://dev-dga-templates.vercel.app)
+
 > Independent and community-maintained. Not affiliated with or endorsed by the Digital Government
 > Authority (DGA). The copy, photo, and logo placeholders are the template's own demo assets,
 > reproduced as drawn.
@@ -89,10 +91,11 @@ The following table lists each section of the template and the library component
 
 - **Components:** every UI element is a `@dev-dga/react` component, styled by `@dev-dga/css`. When
   a section needs something the library lacks, the fix goes into the library, not into this repo.
-- **Layout:** Tailwind CSS v4 utility classes. `src/styles/globals.css` maps the `@dev-dga` design
-  tokens into the Tailwind theme and defines one utility, `hp-container`, for the 1280px content
-  width and the frame gutters. It holds no other CSS. Tailwind's own color, type, and radius scales
-  are disabled, so every color and type size on the page resolves to a library token.
+- **Layout:** Tailwind CSS v4 utility classes on the library's tokens. `src/styles/globals.css`
+  imports the library's Tailwind bridge, `@dev-dga/css/tailwind.css`, which maps every `@dev-dga`
+  token into the Tailwind theme, and defines one utility, `hp-container`, for the 1280px content
+  width and the frame gutters. Tailwind's own color, type, and radius scales are disabled first,
+  so every color and type size on the page resolves to a library token.
 - **Locales:** the URL sets the locale (`/ar`, `/en`), and the text direction follows it. All copy
   lives in `src/i18n/copy.ts`. English is the type source and Arabic mirrors it. Both are the
   template's verbatim placeholder strings.

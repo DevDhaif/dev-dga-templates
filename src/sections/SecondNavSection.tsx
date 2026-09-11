@@ -60,7 +60,7 @@ export function SecondNavSection() {
           return (
             <li
               key={item.icon}
-              className="inline-flex items-center gap-1 text-base whitespace-nowrap text-ink-2"
+              className="inline-flex items-center gap-1 text-base whitespace-nowrap text-ink-secondary"
             >
               <Icon className="size-6 shrink-0" />
               <span>{item.text}</span>

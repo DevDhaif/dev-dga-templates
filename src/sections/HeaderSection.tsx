@@ -123,7 +123,7 @@ export function HeaderSection() {
             </Button>
           </form>
           <div className="grid gap-4">
-            <p className="text-lg font-semibold text-brand">{c.nav.suggestionsTitle}</p>
+            <p className="text-lg font-semibold text-primary">{c.nav.suggestionsTitle}</p>
             <div className="flex flex-wrap gap-2">
               {c.nav.suggestions.map((suggestion) => (
                 <Chip
