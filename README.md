@@ -5,11 +5,13 @@ The DGA Platforms Code page templates, built as React pages from
 English, RTL-native, light and dark. The first template is the **Home Page Template**; the Service
 Page and Form templates from the same Figma collection follow in this repo.
 
-**Live demo:** [dev-dga-templates.vercel.app](https://dev-dga-templates.vercel.app)
+**Live demo:** [dev-dga-templates.vercel.app](https://dev-dga-templates.vercel.app) ·
+**Component docs:** [dev-dga-hub.vercel.app](https://dev-dga-hub.vercel.app) ·
+**npm:** [@dev-dga/react](https://www.npmjs.com/package/@dev-dga/react)
 
-> Independent and community-maintained. Not affiliated with or endorsed by the Digital Government
-> Authority (DGA). The copy, photo, and logo placeholders are the template's own demo assets,
-> reproduced as drawn.
+> Independent, built and maintained outside the DGA. Not affiliated with, nor endorsed by, the
+> Digital Government Authority (DGA). The copy, photo, and logo placeholders are the template's own
+> demo assets, reproduced as drawn, and every identifier shown is sample data.
 
 عرض توضيحي مستقل لقوالب كود المنصات، مبني بالكامل بمكوّنات `@dev-dga`. القالب الأول: الصفحة
 الرئيسية. عربي (افتراضي) وإنجليزي، بوضع فاتح وداكن. غير تابع لهيئة الحكومة الرقمية.
