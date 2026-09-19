@@ -114,11 +114,10 @@ src/
   assets/     inline SVG icons and the logo placeholders
   hooks/      media-query hook
   i18n/       locale helpers and the typed copy dictionary (en, ar)
-  pages/      HomePage and NotFoundPage
-  sections/   one component per section of the home page template
+  pages/      the template gallery, HomePage, NationalDayPage, and NotFoundPage
+  sections/   one component per section, plus national-day/ for the seasonal layer
   styles/     globals.css, the Tailwind entry
 public/images/  the template's exported assets
-docs/spec/      the extracted spec: frames, node IDs, guidelines, library mapping
 docs/reference/ Figma renders of the English frames at 1440 and 430
 ```
 
@@ -138,9 +137,8 @@ To turn the home page template into a real home page, follow these steps:
 
 The design is the
 [Home Page Template - Platforms Code](https://www.figma.com/community/file/1412792257811427893/home-page-template-platforms-code)
-file on Figma Community, published by the DGA. The page follows the Arabic desktop and mobile frames
-with the image hero and the dark green footer. `docs/spec/home-page.md` records the frames, node IDs,
-the 14 guidelines, and how each section maps to the library.
+file on Figma Community, published by the DGA. The page follows the Arabic desktop frame `4:43884`
+and the Arabic mobile frame `72:46744`, with the image hero and the dark green footer.
 
 At 1440px and 430px, every Arabic section lands on its frame's height and offset. The English page
 mirrors its frames except where Chromium sets a placeholder string a few pixels wider than Figma

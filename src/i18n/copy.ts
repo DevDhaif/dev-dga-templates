@@ -198,6 +198,87 @@ const en = {
       mobile: ['ai', 'placeholder'] as ('ai' | 'placeholder')[],
     },
   },
+  nationalDay: {
+    site: {
+      title: 'Saudi National Day Template',
+      description:
+        'The DGA Platforms Code home page under a Saudi National Day brand layer, built with @dev-dga.',
+    },
+    hero: {
+      label: 'National Day hero carousel',
+      slideLabel: 'Go to slide {n}',
+      announce: 'Slide {n} of {m}',
+      prev: 'Previous slide',
+      next: 'Next slide',
+      logoAlt: 'Saudi National Day',
+      artAlt: 'National Day artwork: {name}',
+      slides: {
+        vision: {
+          name: 'Vision',
+          lead: 'Our pride is',
+          accent: 'our vision',
+          description:
+            'Saudi Vision 2030, launched by Crown Prince Mohammed bin Salman, sets out to build a prosperous, sustainable future. It trusts our ability to transform and to build a better country while holding on to our identity.',
+        },
+        giving: {
+          name: 'Giving',
+          lead: 'Our pride is',
+          accent: 'our giving',
+          description:
+            'Giving is among the highest qualities in Saudi identity, passed down through generations. It is not only money: it is time, effort and presence. It shows in the coffee pot that never goes cold and the door left open.',
+        },
+        generosity: {
+          name: 'Generosity',
+          lead: 'Our pride is',
+          accent: 'our generosity',
+          description:
+            'Generosity is a core value of our culture and one of the clearest marks of Saudi identity. It goes beyond hosting well: it is the warmth of the welcome and the readiness to help, and Saudis grow up with it.',
+        },
+        determination: {
+          name: 'Determination',
+          lead: 'Our pride is',
+          accent: 'our determination',
+          description:
+            'Determination is among the qualities that most distinguish the Saudi character: the drive that moves ambition and leads to achievement. It is drawn from our belief in what we can do and our confidence in the future.',
+        },
+        courage: {
+          name: 'Courage',
+          lead: 'Our pride is',
+          accent: 'our courage',
+          description:
+            'Courage is an old value in both our peace and our custom: we answer without hesitation and stand by whoever calls on us. Its people have always been a support and a help to anyone in need.',
+        },
+        authenticity: {
+          name: 'Authenticity',
+          lead: 'Our pride is',
+          accent: 'our authenticity',
+          description:
+            'Authenticity in Saudi society reflects how people hold to their roots and their history, and how they take pride in what they inherited. It shows in customs and in values carried from one generation to the next.',
+        },
+      },
+    },
+  },
+  templates: {
+    eyebrow: 'dev-dga templates',
+    title: 'Platforms Code templates',
+    description:
+      'Government page templates built entirely from @dev-dga React components. Arabic first, RTL native, English mirror, light and dark. Pick one to open the live demo.',
+    cta: 'View template',
+    items: {
+      home: {
+        name: 'Home page',
+        description:
+          'The DGA home page template: digital stamp, nav header, hero, about, services, news, partners, and footer.',
+        tags: ['Arabic and English', 'Light and dark', '10 sections'],
+      },
+      nationalDay: {
+        name: 'Saudi National Day',
+        description:
+          'The same page under the National Day brand layer, with a six-card hero deck that steps through the campaign themes.',
+        tags: ['Arabic and English', 'National Day identity', 'Animated hero'],
+      },
+    },
+  },
   notFound: {
     title: 'Page not found',
     back: 'Back to the home page',
@@ -391,6 +472,87 @@ const ar: Copy = {
     logos: {
       desktop: ['ai', 'placeholder'],
       mobile: ['ai', 'placeholder'],
+    },
+  },
+  nationalDay: {
+    site: {
+      title: 'قالب اليوم الوطني السعودي',
+      description:
+        'الصفحة الرئيسية لكود المنصات بهوية اليوم الوطني السعودي، مبنية بمكوّنات @dev-dga.',
+    },
+    hero: {
+      label: 'شريط اليوم الوطني',
+      slideLabel: 'الانتقال إلى الشريحة {n}',
+      announce: 'الشريحة {n} من {m}',
+      prev: 'الشريحة السابقة',
+      next: 'الشريحة التالية',
+      logoAlt: 'اليوم الوطني السعودي',
+      artAlt: 'عمل فني لليوم الوطني: {name}',
+      slides: {
+        vision: {
+          name: 'الرؤية',
+          lead: 'عِزّنا',
+          accent: 'برؤيتنا',
+          description:
+            'رؤية السعودية 2030، التي أطلقها ولي العهد الأمير محمد بن سلمان، تهدف لبناء مستقبل مزدهر ومستدام. تؤمن الرؤية بقدرتنا على التحول والتقدم وصناعة مستقبل أفضل لوطننا مع الحفاظ على هويتنا وقيمنا، مما يعكس وعيًا عميقًا وطموحًا لصناعة الغد.',
+        },
+        giving: {
+          name: 'الجود',
+          lead: 'عِزّنا',
+          accent: 'بجودنا',
+          description:
+            'الجود من أسمى الصفات في الهوية السعودية، ورثها السعوديون أبًا عن جد. الجود ليس فقط في المال، بل في الوقت والجهد والمواقف. في الثقافة السعودية، الجود يعني العطاء من القلب، وفتح الدار قبل السؤال، والفرح بالعطاء. هو طبع متأصل يظهر في الدلة التي لا تبرد، والباب المفتوح، والمبخرة التي لا تنطفئ.',
+        },
+        generosity: {
+          name: 'الكرم',
+          lead: 'عِزّنا',
+          accent: 'بكرمنا',
+          description:
+            'الكرم من القيم الأساسية في ثقافتنا، ويعد من أبرز سمات الهوية السعودية، ويتجاوز مجرد حسن الضيافة، ليشمل حفاوة الاستقبال والمبادرة بالمساعدة. يعد الكرم رمزًا للأصالة والانتماء، ويربى عليه السعوديون منذ الصغر، مما يجعله جزءًا طبيعيًا من الحياة اليومية والعلاقات الاجتماعية.',
+        },
+        determination: {
+          name: 'الهمة',
+          lead: 'عِزّنا',
+          accent: 'بهمّتنا',
+          description:
+            'الهمة من أبرز الصفات التي تميز الشخصية السعودية، فهي الدافع الذي يحرك الطموح ويقود نحو الإنجاز. وقد أصبحت الهمة جزءًا من ثقافتنا الوطنية، نستمدها من إيماننا بقدراتنا وثقتنا بمستقبلنا.',
+        },
+        courage: {
+          name: 'الشجاعة',
+          lead: 'عِزّنا',
+          accent: 'بشجاعتنا',
+          description:
+            'لأن الشجاعة في سلمنا وعرفنا قيمة أصيلة، نفزع بلا تردد وننجد من استنجدنا، وهي صفة متجذرة فينا منذ القدم وامتدادًا عبر تاريخ هذه البلاد العظيمة، حيث كان أبناء الوطن دائمًا سندًا وعونًا لكل محتاج.',
+        },
+        authenticity: {
+          name: 'الأصالة',
+          lead: 'عِزّنا',
+          accent: 'بأصالتنا',
+          description:
+            'الأصالة في المجتمع السعودي تعكس ارتباط الناس بجذورهم وتاريخهم، واعتزازهم بإرثهم. فهي تظهر في التمسك بالعادات والتقاليد، واستمرار القيم التي تتوارثها الأجيال.',
+        },
+      },
+    },
+  },
+  templates: {
+    eyebrow: 'قوالب dev-dga',
+    title: 'قوالب كود المنصات',
+    description:
+      'قوالب صفحات حكومية مبنية بالكامل من مكوّنات @dev-dga لـ React. عربي أولًا، واتجاه من اليمين إلى اليسار، مع نسخة إنجليزية، ووضع فاتح وداكن. اختر قالبًا لعرضه.',
+    cta: 'عرض القالب',
+    items: {
+      home: {
+        name: 'الصفحة الرئيسية',
+        description:
+          'قالب الصفحة الرئيسية من هيئة الحكومة الرقمية: الختم الرقمي، وشريط التنقل، والواجهة، ومن نحن، والخدمات، والأخبار، والشركاء، والتذييل.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', '10 أقسام'],
+      },
+      nationalDay: {
+        name: 'اليوم الوطني السعودي',
+        description:
+          'الصفحة نفسها بهوية اليوم الوطني، مع واجهة من ست بطاقات تتنقل بين محاور الحملة.',
+        tags: ['عربي وإنجليزي', 'هوية اليوم الوطني', 'واجهة متحركة'],
+      },
     },
   },
   notFound: {

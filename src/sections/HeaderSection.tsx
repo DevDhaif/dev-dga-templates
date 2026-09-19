@@ -52,7 +52,7 @@ export function HeaderSection() {
         />
         <HeaderBrand>
           <RouterLink
-            to={`/${locale}/home`}
+            to={`/${locale}`}
             className="inline-flex rounded-sm no-underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
             aria-label={c.site.logoLabel}
           >
