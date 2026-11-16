@@ -31,3 +31,9 @@
     );
   }
 }
+
+@layer base {
+  body {
+    text-rendering: geometricPrecision;
+  }
+}

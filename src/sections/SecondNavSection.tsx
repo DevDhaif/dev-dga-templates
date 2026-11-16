@@ -1,30 +1,29 @@
 import { Button, Tooltip, TooltipContent, TooltipTrigger } from '@dev-dga/react';
 import { useMode } from '@/app/mode';
+import { MoonIcon, SunIcon } from '@/assets/icons';
 import {
-  CalendarIcon,
-  ClockIcon,
+  Calendar04Icon,
   CloudIcon,
-  EyeIcon,
-  LocationIcon,
-  MicIcon,
-  MoonIcon,
-  SunIcon,
+  Location01Icon,
+  Mic01Icon,
+  Time04Icon,
+  ViewIcon,
   ZoomInAreaIcon,
   ZoomOutAreaIcon,
-} from '@/assets/icons';
+} from '@/assets/dga-icons';
 import { useCopy } from '@/i18n/locale-context';
 
 const ITEM_ICONS = {
   cloud: CloudIcon,
-  calendar: CalendarIcon,
-  clock: ClockIcon,
-  location: LocationIcon,
+  calendar: Calendar04Icon,
+  clock: Time04Icon,
+  location: Location01Icon,
 };
 const ACTION_ICONS = {
-  mic: MicIcon,
+  mic: Mic01Icon,
   zoomOut: ZoomOutAreaIcon,
   zoomIn: ZoomInAreaIcon,
-  view: EyeIcon,
+  view: ViewIcon,
 };
 
 function ThemeToggle({ labels }: { labels: { light: string; dark: string } }) {

@@ -18,6 +18,17 @@ type TemplateKey = keyof Copy['templates']['items'];
 const TEMPLATES: { key: TemplateKey; path: string; image: string }[] = [
   { key: 'home', path: 'home', image: '/images/templates/home.jpg' },
   { key: 'nationalDay', path: 'national-day', image: '/images/templates/national-day.jpg' },
+  { key: 'service', path: 'service', image: '/images/templates/service.jpg' },
+  { key: 'about', path: 'about', image: '/images/templates/about.jpg' },
+  { key: 'help', path: 'help', image: '/images/templates/help.jpg' },
+  { key: 'faq', path: 'faq', image: '/images/templates/faq.jpg' },
+  { key: 'contact', path: 'contact', image: '/images/templates/contact.jpg' },
+  { key: 'search', path: 'search', image: '/images/templates/search.jpg' },
+  { key: 'sitemap', path: 'sitemap', image: '/images/templates/sitemap.jpg' },
+  { key: 'content', path: 'content', image: '/images/templates/content.jpg' },
+  { key: 'contentHeavy', path: 'content-heavy', image: '/images/templates/content-heavy.jpg' },
+  { key: 'form', path: 'form', image: '/images/templates/form.jpg' },
+  { key: 'notFound', path: 'not-found', image: '/images/templates/not-found.jpg' },
 ];
 
 export function TemplatesPage() {

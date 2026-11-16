@@ -14,7 +14,8 @@ import {
 import { useIsMobile } from '@/hooks/use-media-query';
 import { fill } from '@/i18n/format';
 import type { Copy } from '@/i18n/copy';
-import { useCopy } from '@/i18n/locale-context';
+import { useCopy, useLocale } from '@/i18n/locale-context';
+import { pageCopy } from '@/i18n/pages/shared';
 import { SectionHead } from './SectionHead';
 
 function NewsCard({ card, mobile }: { card: Copy['news']['card']; mobile?: boolean }) {
@@ -36,6 +37,7 @@ function NewsCard({ card, mobile }: { card: Copy['news']['card']; mobile?: boole
 
 export function NewsSection() {
   const c = useCopy().news;
+  const ui = pageCopy[useLocale().locale];
   const mobile = useIsMobile();
   const head = (
     <SectionHead
@@ -53,20 +55,28 @@ export function NewsSection() {
   if (mobile) {
     const cards = Array.from({ length: c.mobileCount }, (_, i) => i);
     return (
-      <section className="py-10" aria-labelledby="hp-news-title">
+      <section className="overflow-clip py-10" aria-labelledby="hp-news-title">
         <div className="hp-container">{head}</div>
-        <div className="mt-8">
+        <div className="hp-container mt-8">
           <Carousel
+            className="px-6"
             aria-label={c.label}
+            aria-roledescription={ui.carousel}
+            announce={(n, m) => fill(ui.announce, { n: n + 1, m })}
             controls="dots"
-            slideSize={`min(${c.mobileSlide}px, 100% - 48px)`}
+            slideSize={`${c.mobileSlide}px`}
             gap="16px"
             align="center"
             flush
           >
-            <CarouselViewport>
+            {/* Pages are sized inside the 24px inset, as in the frames; the neighbours still peek to the section edge. */}
+            <CarouselViewport className="overflow-visible [contain:none]">
               {cards.map((i) => (
-                <CarouselSlide key={i}>
+                <CarouselSlide
+                  key={i}
+                  aria-roledescription={ui.slide}
+                  aria-label={fill(ui.slideOf, { n: i + 1, m: cards.length })}
+                >
                   <NewsCard card={c.card} mobile />
                 </CarouselSlide>
               ))}
