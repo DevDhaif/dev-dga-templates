@@ -8,3 +8,7 @@ export { NewsSection } from './NewsSection';
 export { PartnersSection } from './PartnersSection';
 export { LastModifiedSection } from './LastModifiedSection';
 export { FooterSection } from './FooterSection';
+export { FeedbackSection } from './FeedbackSection';
+export { PageIntro } from './PageIntro';
+export { HubCard } from './HubCard';
+export { RatingSection } from './RatingSection';

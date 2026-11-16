@@ -15,17 +15,22 @@ import {
 import { CheckCircleIcon } from '@/assets/icons';
 import { useIsMobile } from '@/hooks/use-media-query';
 import { fill } from '@/i18n/format';
-import { useCopy } from '@/i18n/locale-context';
+import { useCopy, useLocale } from '@/i18n/locale-context';
+import { pageCopy } from '@/i18n/pages/shared';
 import { SectionHead } from './SectionHead';
 
-const TAG_VARIANTS = ['success-subtle', 'info-subtle', 'default'] as const;
+const TAG_VARIANTS = ['success-subtle', 'info-subtle', 'secondary-subtle'] as const;
 
 export function ServicesSection() {
   const c = useCopy().services;
+  const ui = pageCopy[useLocale().locale];
   const mobile = useIsMobile();
   const cards = Array.from({ length: mobile ? c.mobileCount : c.count }, (_, i) => i);
   return (
-    <section className="bg-gray-50 py-10 dark:bg-muted" aria-labelledby="hp-services-title">
+    <section
+      className="overflow-clip bg-gray-50 py-10 dark:bg-muted"
+      aria-labelledby="hp-services-title"
+    >
       <div className="hp-container">
         <SectionHead
           id="hp-services-title"
@@ -38,18 +43,26 @@ export function ServicesSection() {
           }
         />
       </div>
-      <div className="mt-8">
+      <div className="hp-container mt-8">
         <Carousel
+          className="px-6"
           aria-label={c.label}
+          aria-roledescription={ui.carousel}
+          announce={(n, m) => fill(ui.announce, { n: n + 1, m })}
           controls="dots"
           slideSize="320px"
           gap="16px"
           align="center"
           flush
         >
-          <CarouselViewport>
+          {/* Pages are sized inside the 24px inset, as in the frames; the neighbours still peek to the section edge. */}
+          <CarouselViewport className="overflow-visible [contain:none]">
             {cards.map((i) => (
-              <CarouselSlide key={i}>
+              <CarouselSlide
+                key={i}
+                aria-roledescription={ui.slide}
+                aria-label={fill(ui.slideOf, { n: i + 1, m: cards.length })}
+              >
                 <Card className="h-full">
                   <CardHeader>
                     <CardIcon featured>

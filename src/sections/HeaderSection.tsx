@@ -21,7 +21,8 @@ import {
   SlideoutMenuSeparator,
   SlideoutMenuTitle,
 } from '@dev-dga/react';
-import { LanguageIcon, PlusSignIcon, SearchIcon, UserIcon } from '@/assets/icons';
+import { PlusSignIcon } from '@/assets/icons';
+import { Search01Icon, TranslationIcon, UserIcon } from '@/assets/dga-icons';
 import { PlatformLogo } from '@/assets/logos';
 import { otherLocale } from '@/i18n/locale';
 import { useCopy, useLocale } from '@/i18n/locale-context';
@@ -44,7 +45,7 @@ export function HeaderSection() {
 
   return (
     <>
-      <Header aria-label={c.nav.label} fullWidth>
+      <Header aria-label={c.nav.label} fullWidth className="max-md:after:hidden">
         <HeaderMenuButton
           label={c.nav.menuButton}
           aria-expanded={drawerOpen}
@@ -75,7 +76,7 @@ export function HeaderSection() {
         </HeaderNav>
         <HeaderActions>
           <HeaderAction
-            icon={<SearchIcon />}
+            icon={<Search01Icon />}
             selected={isSearch}
             aria-expanded={isSearch}
             aria-controls={panelId}
@@ -83,7 +84,7 @@ export function HeaderSection() {
           >
             {c.nav.search}
           </HeaderAction>
-          <HeaderAction asChild icon={<LanguageIcon />}>
+          <HeaderAction asChild icon={<TranslationIcon />}>
             <RouterLink to={`/${other}/home`} lang={other} hrefLang={other}>
               {c.nav.language}
             </RouterLink>
@@ -173,7 +174,7 @@ export function HeaderSection() {
               <SlideoutMenuSeparator />
               <SlideoutMenuGroup label={c.nav.account}>
                 <SlideoutMenuItem
-                  icon={<SearchIcon />}
+                  icon={<Search01Icon />}
                   onClick={() => {
                     setDrawerOpen(false);
                     setPanel({ kind: 'search' });
@@ -181,7 +182,7 @@ export function HeaderSection() {
                 >
                   {c.nav.search}
                 </SlideoutMenuItem>
-                <SlideoutMenuItem asChild icon={<LanguageIcon />}>
+                <SlideoutMenuItem asChild icon={<TranslationIcon />}>
                   <RouterLink to={`/${other}/home`} lang={other} hrefLang={other}>
                     {c.nav.language}
                   </RouterLink>

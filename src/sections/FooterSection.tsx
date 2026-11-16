@@ -15,13 +15,20 @@ import {
   FooterNav,
   Link,
 } from '@dev-dga/react';
-import { EyeIcon, HandIcon, InstagramIcon, LinkedInIcon, XIcon, ZoomIcon } from '@/assets/icons';
+import {
+  InstagramIcon,
+  Linkedin02Icon,
+  NewTwitterIcon,
+  SearchAddIcon,
+  SignLanguageCIcon,
+  ViewIcon,
+} from '@/assets/dga-icons';
 import { PlatformLogo, YearOfAiLogo } from '@/assets/logos';
 import { useIsMobile } from '@/hooks/use-media-query';
 import { useCopy } from '@/i18n/locale-context';
 
-const SOCIAL_ICONS = { x: XIcon, linkedin: LinkedInIcon, instagram: InstagramIcon };
-const ACCESS_ICONS = { hand: HandIcon, zoom: ZoomIcon, eye: EyeIcon };
+const SOCIAL_ICONS = { x: NewTwitterIcon, linkedin: Linkedin02Icon, instagram: InstagramIcon };
+const ACCESS_ICONS = { hand: SignLanguageCIcon, zoom: SearchAddIcon, eye: ViewIcon };
 const COLUMN = ['social', 'accessibility'] as const;
 
 export function FooterSection() {

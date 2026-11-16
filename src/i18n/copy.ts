@@ -91,9 +91,9 @@ const en = {
       secondary: 'Action',
       primary: 'Action',
     },
-    count: 16,
+    count: 12,
     mobileCount: 4,
-    mobileAction: 'lg' as 'md' | 'lg',
+    mobileAction: 'md' as 'md' | 'lg',
   },
   news: {
     title: 'Articles and News Section',
@@ -111,7 +111,7 @@ const en = {
     },
     count: 3,
     mobileCount: 4,
-    mobileSlide: 350,
+    mobileSlide: 360,
   },
   partners: {
     title: 'Partner Section',
@@ -277,11 +277,73 @@ const en = {
           'The same page under the National Day brand layer, with a six-card hero deck that steps through the campaign themes.',
         tags: ['Arabic and English', 'National Day identity', 'Animated hero'],
       },
+      service: {
+        name: 'Service page',
+        description:
+          'The DGA service page: service details, steps, an info card with channels and contacts, related services, and the rating section.',
+        tags: ['Arabic and English', 'Light and dark', 'Rating and feedback'],
+      },
+      about: {
+        name: 'About the entity',
+        description:
+          'The DGA About the Entity landing page: a tinted hero and eleven cards that lead to the entity’s pages.',
+        tags: ['Arabic and English', 'Light and dark', '11 cards'],
+      },
+      help: {
+        name: 'Help and support',
+        description:
+          'The DGA Help and Support hub: contact and FAQ channels with availability and response times.',
+        tags: ['Arabic and English', 'Light and dark', 'Support hub'],
+      },
+      faq: {
+        name: 'FAQs',
+        description:
+          'The DGA FAQ page: a tinted header, the question list, and a comments and suggestions card.',
+        tags: ['Arabic and English', 'Light and dark', 'Accordion'],
+      },
+      contact: {
+        name: 'Contact us',
+        description:
+          'The DGA Contact Us page: a two-column form with a country code picker and file upload, beside a card of contact channels.',
+        tags: ['Arabic and English', 'Light and dark', 'Form'],
+      },
+      search: {
+        name: 'Search results',
+        description:
+          'The DGA search page: a search bar, filter and sort, a grid of result cards, and pagination.',
+        tags: ['Arabic and English', 'Light and dark', 'Filter and sort'],
+      },
+      sitemap: {
+        name: 'Sitemap',
+        description:
+          'The DGA site map: an indented tree of links, filled points for main pages and empty points for subpages.',
+        tags: ['Arabic and English', 'Light and dark', 'Four levels'],
+      },
+      content: {
+        name: 'Content page',
+        description:
+          'The DGA standard content page: headings, paragraphs, ordered, unordered, and icon lists, an image, and links.',
+        tags: ['Arabic and English', 'Light and dark', 'Article'],
+      },
+      contentHeavy: {
+        name: 'Heavy content page',
+        description:
+          'The DGA heavy content page: the same content with an in-page navigation menu beside it.',
+        tags: ['Arabic and English', 'Light and dark', 'In-page navigation'],
+      },
+      form: {
+        name: 'Form page',
+        description:
+          'The DGA form page: every text field state in two columns, beside a vertical progress indicator.',
+        tags: ['Arabic and English', 'Light and dark', 'Field states'],
+      },
+      notFound: {
+        name: 'Page not found',
+        description:
+          'The DGA 404 page: a large 404 with scattered marks, a short message, and a way back home.',
+        tags: ['Arabic and English', 'Light and dark', 'Error page'],
+      },
     },
-  },
-  notFound: {
-    title: 'Page not found',
-    back: 'Back to the home page',
   },
 };
 
@@ -370,15 +432,15 @@ const ar: Copy = {
       title: 'عنوان البطاقة',
       description: 'نص إضافي لمحتوى البطاقة',
       tags: ['وسم', 'وسم', 'وسم'],
-      secondary: 'اجراء ثانوي',
-      primary: 'اجراء',
+      secondary: 'إجراء ثانوي',
+      primary: 'إجراء',
     },
-    count: 16,
+    count: 12,
     mobileCount: 4,
     mobileAction: 'md',
   },
   news: {
-    title: 'قسم الاخبار والمقالات',
+    title: 'قسم الأخبار والمقالات',
     description: 'هنا يمكنك إضافة وصف مختصر حول الغرض من البوابة.',
     viewAll: 'عرض الكل',
     label: 'عرض الأخبار الدوّار',
@@ -393,7 +455,7 @@ const ar: Copy = {
     },
     count: 3,
     mobileCount: 4,
-    mobileSlide: 352,
+    mobileSlide: 360,
   },
   partners: {
     title: 'قسم الشركاء',
@@ -553,11 +615,72 @@ const ar: Copy = {
           'الصفحة نفسها بهوية اليوم الوطني، مع واجهة من ست بطاقات تتنقل بين محاور الحملة.',
         tags: ['عربي وإنجليزي', 'هوية اليوم الوطني', 'واجهة متحركة'],
       },
+      service: {
+        name: 'صفحة الخدمة',
+        description:
+          'صفحة الخدمة من الهيئة: تفاصيل الخدمة وخطواتها، وبطاقة معلومات بالقنوات وجهات التواصل، والخدمات ذات الصلة، وقسم التقييم.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'التقييم والملاحظات'],
+      },
+      about: {
+        name: 'عن الجهة',
+        description: 'صفحة عن الجهة من الهيئة: قسم رئيسي ملون و11 بطاقة تقود إلى صفحات الجهة.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', '11 بطاقة'],
+      },
+      help: {
+        name: 'المساعدة والدعم',
+        description:
+          'مركز المساعدة والدعم من الهيئة: قنوات التواصل والأسئلة الشائعة مع أوقات التوفر والاستجابة.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'مركز الدعم'],
+      },
+      faq: {
+        name: 'الأسئلة الشائعة',
+        description:
+          'صفحة الأسئلة الشائعة من الهيئة: ترويسة ملونة، وقائمة الأسئلة، وبطاقة للتعليقات والاقتراحات.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'قائمة قابلة للطي'],
+      },
+      contact: {
+        name: 'تواصل معنا',
+        description:
+          'صفحة تواصل معنا من الهيئة: نموذج بعمودين مع اختيار مفتاح الدولة ورفع الملفات، وبجانبه بطاقة قنوات التواصل.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'نموذج'],
+      },
+      search: {
+        name: 'نتائج البحث',
+        description:
+          'صفحة البحث من الهيئة: شريط بحث، والتصفية والترتيب، وشبكة بطاقات النتائج، وترقيم الصفحات.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'التصفية والترتيب'],
+      },
+      sitemap: {
+        name: 'خريطة الموقع',
+        description:
+          'خريطة الموقع من الهيئة: شجرة روابط متدرجة، بنقاط ممتلئة للصفحات الرئيسية ونقاط فارغة للصفحات الفرعية.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'أربعة مستويات'],
+      },
+      content: {
+        name: 'صفحة المحتوى',
+        description:
+          'صفحة المحتوى القياسية من الهيئة: عناوين وفقرات، وقوائم مرتبة وغير مرتبة وبأيقونات، وصورة، وروابط.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'مقال'],
+      },
+      contentHeavy: {
+        name: 'صفحة المحتوى الثقيل',
+        description:
+          'صفحة المحتوى الثقيل من الهيئة: المحتوى نفسه مع قائمة تنقل داخل الصفحة بجانبه.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'تنقل داخل الصفحة'],
+      },
+      form: {
+        name: 'صفحة النموذج',
+        description:
+          'صفحة النموذج من الهيئة: كل حالات حقل النص في عمودين، وبجانبها مؤشر تقدم عمودي.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'حالات الحقول'],
+      },
+      notFound: {
+        name: 'الصفحة غير موجودة',
+        description:
+          'صفحة الخطأ 404 من الهيئة: رقم 404 كبير حوله علامات متفرقة، ورسالة قصيرة، وطريق للعودة إلى الرئيسية.',
+        tags: ['عربي وإنجليزي', 'فاتح وداكن', 'صفحة خطأ'],
+      },
     },
-  },
-  notFound: {
-    title: 'الصفحة غير موجودة',
-    back: 'العودة إلى الصفحة الرئيسية',
   },
 };
 
