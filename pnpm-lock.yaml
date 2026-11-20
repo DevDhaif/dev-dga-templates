@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@dev-dga/css':
-        specifier: ^1.7.1
-        version: 1.7.1
+        specifier: ^1.9.0
+        version: 1.9.0
       '@dev-dga/react':
-        specifier: ^1.7.1
-        version: 1.7.1(@dev-dga/css@1.7.1)(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        specifier: ^1.9.0
+        version: 1.9.0(@dev-dga/css@1.9.0)(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@dev-dga/tokens':
-        specifier: ^1.7.1
-        version: 1.7.1
+        specifier: ^1.9.0
+        version: 1.9.0
       '@fontsource/ibm-plex-sans-arabic':
         specifier: ^5.3.0
         version: 5.3.0
@@ -154,20 +154,20 @@ packages:
   '@cacheable/utils@2.5.0':
     resolution: {integrity: sha512-buipgOVDkkPXNR5+xBpDw7Zk2n1EvU7qBJCNUcL7rhQ//kfpOXPAvQ511Os0vpLYJ1pZnvudNytkQt2hst3wqA==}
 
-  '@dev-dga/css@1.7.1':
-    resolution: {integrity: sha512-9VHwx2UWX7NQcs6Pd6AlT5ORrLf3gYSYzgTcIuoCkJcJ4K7D2ysEbudkzclIS1Bz42OCaBu+JU3Dc+5cBwJ9Aw==}
+  '@dev-dga/css@1.9.0':
+    resolution: {integrity: sha512-EHlyTHIGef4JbEu3hdFctj1xQLwZAIoM6YXcYd6gyR/Iqdu9a/4i5mhYDcQY9MiAwVZ01DGLaZ6AkC2JJoXMFw==}
     engines: {node: '>=20'}
 
-  '@dev-dga/react@1.7.1':
-    resolution: {integrity: sha512-6agCAJnjH7aSTiW/EVwQ093AAfiKcvPDYrJ2ToCI3HrXgP4BeGI8ZdLF1og2BZHTxKGDtYRtx/L7ONVVqVm9XQ==}
+  '@dev-dga/react@1.9.0':
+    resolution: {integrity: sha512-+UmfV0McBgf2eArqbuycO/gc10NCPlrha2e5Ld5cx2Rcj/pL7tDKiUv5DyCbfYdDDyI2mZerziLDiSSA6Yh2hA==}
     engines: {node: '>=20'}
     peerDependencies:
-      '@dev-dga/css': 1.7.1
+      '@dev-dga/css': 1.9.0
       react: ^19.0.0
       react-dom: ^19.0.0
 
-  '@dev-dga/tokens@1.7.1':
-    resolution: {integrity: sha512-6JTEghJr8Sdkb7nn5ZsHw79yoxtcXCF/qVTySpGo0FmvGb/xTK7HMXUCLwIi7gJLIfBt13QWBds43N6qLW2bBQ==}
+  '@dev-dga/tokens@1.9.0':
+    resolution: {integrity: sha512-p0wb0NK3GPTVA1y+x/5kNgWNhj6vUOgBxOIyVY1shk6kkToH9RfN9zIXrdabOF2sgMcw1ihm8YepH01ORVlp5w==}
     engines: {node: '>=20'}
 
   '@eslint-community/eslint-utils@4.10.1':
@@ -2127,12 +2127,12 @@ snapshots:
       hashery: 1.5.1
       keyv: 5.6.0
 
-  '@dev-dga/css@1.7.1': {}
+  '@dev-dga/css@1.9.0': {}
 
-  '@dev-dga/react@1.7.1(@dev-dga/css@1.7.1)(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@dev-dga/react@1.9.0(@dev-dga/css@1.9.0)(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
-      '@dev-dga/css': 1.7.1
-      '@dev-dga/tokens': 1.7.1
+      '@dev-dga/css': 1.9.0
+      '@dev-dga/tokens': 1.9.0
       '@internationalized/date': 3.12.4
       class-variance-authority: 0.7.1
       clsx: 2.1.1
@@ -2145,7 +2145,7 @@ snapshots:
       - '@types/react'
       - '@types/react-dom'
 
-  '@dev-dga/tokens@1.7.1': {}
+  '@dev-dga/tokens@1.9.0': {}
 
   '@eslint-community/eslint-utils@4.10.1(eslint@10.10.0(jiti@2.7.0))':
     dependencies:
